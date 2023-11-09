@@ -1,0 +1,56 @@
+
+#divLogin{
+    width: 280px;
+    height: 350px;
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 150px;
+    right: 42%;
+    border-radius: 8px;
+}
+
+input{
+    height: 35px;
+    width: 200px;
+    border: solid ;
+
+}
+
+#email{
+    position: absolute;
+    top: 120px;
+    right: 14%;
+}
+
+#password{
+    position: absolute;
+    top: 180px;
+    right: 14%;
+}
+
+
+
+body{
+    background-color: gray;
+    
+}
+
+h1{
+    text-align: center;
+    color: rgb(42, 8, 156);
+}
+
+#btnSubmit{
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    top: 250px;
+    right: 30%;
+    background-color: chocolate;
+
+}
+
+h2{
+    text-align: center;
+    background-color: chartreuse;
+}
