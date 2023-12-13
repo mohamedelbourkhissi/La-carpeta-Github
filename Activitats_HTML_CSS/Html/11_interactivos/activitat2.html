@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2</title>
+</head>
+<body>
+
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Buscador de Smartphones</title>
+
+    </head>
+    <body>
+    
+      <h1>Buscador de Smartphones</h1>
+    
+      <form id="searchForm">
+        <label for="brand">Marca:</label>
+        <input type="text" id="brand" name="brand" placeholder="Escribe la marca">
+    
+        <label for="priceRange">Rango de precios:</label>
+        <select id="priceRange" name="priceRange">
+          <option value="0-200">€0 - €200</option>
+          <option value="201-500">€201 - €500</option>
+          <option value="501-1000">€501 - €1000</option>
+          <option value="1001+">Más de €1000</option>
+        </select>
+    
+        <button type="button" onclick="search()">Buscar</button>
+      </form>
+    
+      <script>
+        const brands = ["Apple", "Samsung", "Huawei", "Xiaomi", "Google", "OnePlus"];
+    
+        const inp = document.getElementById("brand");
+        new Awesomplete(inp, { list: brands });
+    
+        function search() {
+          const brand = ip.value;
+          const priceRange = document.getElementById("priceRange").value;
+    
+        }
+
+      </script>
+    
+
+    </body>
+    </html>
+    
+
+
+
+  
+    
+</body>
+</html>
