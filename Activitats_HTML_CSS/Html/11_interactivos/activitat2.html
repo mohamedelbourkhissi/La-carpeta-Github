@@ -24,27 +24,28 @@
       <form id="searchForm">
         <label for="brand">Marca:</label>
         <input type="text" id="brand" name="brand" placeholder="Escribe la marca">
-    
-        <label for="priceRange">Rango de precios:</label>
-        <select id="priceRange" name="priceRange">
+        
+        <label for="precio">Rango de precios:</label>
+        <select id="precio" name="precio">
           <option value="0-200">€0 - €200</option>
           <option value="201-500">€201 - €500</option>
           <option value="501-1000">€501 - €1000</option>
           <option value="1001+">Más de €1000</option>
         </select>
     
-        <button type="button" onclick="search()">Buscar</button>
+        <button type="button" onclick="buscar()">Buscar</button>
       </form>
     
       <script>
+
         const brands = ["Apple", "Samsung", "Huawei", "Xiaomi", "Google", "OnePlus"];
     
         const inp = document.getElementById("brand");
         new Awesomplete(inp, { list: brands });
     
-        function search() {
+        function buscar() {
           const brand = ip.value;
-          const priceRange = document.getElementById("priceRange").value;
+          const priceRange = document.getElementById("precio").value;
     
         }
 
