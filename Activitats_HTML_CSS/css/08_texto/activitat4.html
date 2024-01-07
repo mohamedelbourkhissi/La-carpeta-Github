@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio con Fuentes Personalizadas</title>
+    <style>
+        @font-face {
+            font-family: 'FuenteTitulo';
+            src: url('fonts/Titulo-Regular.woff2') format('woff2'),
+                 url('fonts/Titulo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'FuenteTexto';
+            src: url('fonts/Texto-Regular.woff2') format('woff2'),
+                 url('fonts/Texto-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .titulo {
+            font-family: 'FuenteTitulo', sans-serif;
+            font-size: 2em;
+        }
+
+        .texto {
+            font-family: 'FuenteTexto', sans-serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="titulo">Título de la Página</h1>
+
+<p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur sit amet felis et arcu eleifend vulputate. Praesent aliquet velit id justo pellentesque, eu tempor libero auctor. Vestibulum at sapien sit amet turpis luctus ultrices. Sed euismod laoreet elit, ac venenatis elit gravida ac.</p>
+
+</body>
+</html>
