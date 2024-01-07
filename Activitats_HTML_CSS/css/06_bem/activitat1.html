@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1</title>
+    <style>
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        #logo {
+            max-width: 80px; 
+            max-height: 80px;
+        }
+
+        form {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img id="logo" src="data:image/jpeg;base64,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" alt="Logo de la página">
+    <nav>
+        <a href="#seccion1">Sección 1</a>
+        <a href="#seccion2">Sección 2</a>
+        <a href="#seccion3">Sección 3</a>
+    </nav>
+
+    <form action="" method="GET">
+        <label for="busqueda">Buscar:</label>
+        <input type="text" id="busqueda" name="busqueda">
+        <button type="submit">Buscar</button>
+    </form>
+</header>
+
+
+</body>
+</html>

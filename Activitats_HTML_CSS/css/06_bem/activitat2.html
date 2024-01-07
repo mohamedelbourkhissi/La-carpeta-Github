@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #comentarios {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .comentario {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .comentario h4 {
+            margin: 0 0 10px;
+        }
+
+        .comentario p {
+            margin: 0;
+        }
+
+        div .comentario{
+            background-color: rgb(221, 241, 241);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0c128d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="comentarios">
+    <div class="comentario">
+        <h4>Mohamed</h4>
+        <p>Hola </p>
+    </div>
+
+    <div class="comentario">
+        <h4>Joan</h4>
+        <p>Hola todos</p>
+    </div>
+
+</div>
+
+<form id="formulario de comentario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+    <button type="submit">Publicar</button>
+</form>
+
+</body>
+</html>
