@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .chat-container {
+      max-width: 400px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .message {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+
+    .sender {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .timestamp {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .message-body {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-grow: 1;
+    }
+
+    .sender-1 {
+      background-color: #85C1E9;
+      color: #fff;
+    }
+
+    .sender-2 {
+      background-color: #F8C471;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-container">
+
+
+    <div class="message sender-1">
+        <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkahfZHYrguZ04Qug2yn6NxBhkIa2R0AJ2hQ-GtLjcrohUyznsBAF8uPTWto-VmxmXSfs&usqp=CAU" alt="Avatar 1">
+        <div class="message-body">
+          <div class="sender">Usuario 1</div>
+          <div class="timestamp">Fecha: 07-01-2024 10:00 AM</div>
+          <p>Hola Joan que tal ?</p>
+        </div>
+      </div>
+      
+  <div class="message sender-2">
+    <img class="avatar" src="https://c8.alamy.com/zoomses/9/3ab0756e8c5d408eb64aab0a46d6214f/maepn2.jpg" alt="Avatar 2">
+    <div class="message-body">
+      <div class="sender">Usuario 2</div>
+      <div class="timestamp">Fecha: 07-01-2024 10:05 AM</div>
+      <p>Hola muy bien . y tu ?</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
