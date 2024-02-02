@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activitat 2</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.plan {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.plan h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.plan p {
+    margin-bottom: 10px;
+}
+.plan ul {
+    padding-left: 20px;
+}
+.plan li {
+    margin-bottom: 5px;
+}
+.plan .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.plan .cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.plan .cta:hover {
+    background-color: #0056b3;
+}
+    </style>
 </head>
 <body>
-    
-</body>
-</html>
+    <div class="container">
+        <div class="plan">
+            <h2>Pro</h2>
+            <p class="price">$299 / mes</p>
+            <ul>
+                <li>Marketing CRM</li>
+                <li>Asistente Creativo</li>
+                <li>Creador de sitios web</li>
+                <li>Dominio de Mailchimp</li>
+                <li>Páginas de destino y formularios Premium</li>
+                <li>Funciones avanzadas para profesionales que necesitan más personalización</li>
+            </ul>
+            <button class="cta">Compra ahora</button>
+        </div>
+        <div class="plan">
+            <h2>Standard</h2>
+            <p class="price">$14.9 / mes</p>
+            <ul>
+                <li>Segmentación avanzada</li>
+                <li>Pruebas multivariantes</li>
+                <li>Informes comparativos</li>
+                <li>Puestos ilimitados y</li>
+                <li>acceso basado en funciones</li>
+                <li>Asistencia técnica</li>
+                <li>telefónica</li>
+            </ul>
+            <button class="cta">Compra ahora</button>
+        </div>
+        <div class="plan">
+            <h2>Essentials</h2>
+            <p class="price">$0.99 / mes</p>
+            <ul>
+                <li>Marketing CRM</li>
+                <li>Asistente Creativo</li>
+                <li>Creador de recorridos</li>
+                <li>Puntos de ramificación</li>
+                <li>Optimización de la hora de envío</li>
+                <li>Redireccionamiento conductual</li>
+                <li>Plantillas personalizadas</li>
+                <li>Contenido dinámico</li>
+                <li>Pruebas A / B</li>
+                <li>
