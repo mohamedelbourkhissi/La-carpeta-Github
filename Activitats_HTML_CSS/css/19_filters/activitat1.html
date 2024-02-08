@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activitat 1</title>
+  <style>
+
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .grayscale-filter {
+      filter: grayscale(100%);
+      transition: filter 0.5s;
+    }
+
+    .image-container:hover .grayscale-filter {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img class="grayscale-filter" src="imatge.png" alt="Mi imagen">
+  </div>
+
+</body>
+</html>
