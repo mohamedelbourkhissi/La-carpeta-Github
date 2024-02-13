@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activita 2</title>
+  <style>
+    body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.noria {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateNoria 10s linear infinite; 
+}
+
+.asiento {
+  width: 30px;
+  height: 100px;
+  background-color: #ffcc00; 
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.soporte {
+  width: 10px;
+  height: 150px;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+@keyframes rotateNoria {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="noria">
+    <div class="asiento"></div>
+    <div class="soporte"></div>
+
+  </div>
+</body>
+</html>

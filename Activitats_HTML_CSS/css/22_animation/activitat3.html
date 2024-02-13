@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>activitat 3</title>
+  <style>
+    body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.noria {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateNoria 10s linear infinite; 
+}
+
+.asiento {
+  width: 30px;
+  height: 100px;
+  background-color: #001562; 
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.soporte {
+  width: 10px;
+  height: 150px;
+  background-color: #333; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+.cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  animation: showBanner 2s ease-in-out;
+}
+
+@keyframes showBanner {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="noria">
+    <div class="asiento"></div>
+    <div class="soporte"></div>
+  </div>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <p>Este sitio web utiliza cookies. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+    <button onclick="aceptarCookies()">Aceptar</button>
+  </div>
+
+  <script >
+    document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    var cookieBanner = document.getElementById("cookieBanner");
+    cookieBanner.style.display = "block";
+  }, 5000); 
+});
+
+function aceptarCookies() {
+  var cookieBanner = document.getElementById("cookieBanner");
+  cookieBanner.style.display = "none";
+}
+
+  </script>
+</body>
+</html>

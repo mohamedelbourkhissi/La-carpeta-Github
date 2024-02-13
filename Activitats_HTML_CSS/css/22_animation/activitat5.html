@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Activitat 5</title>
+  <style>
+    body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e1d9d9;
+}
+
+.loading-container {
+  text-align: center;
+}
+
+.loading {
+  border: 6px solid #0419b7;
+  border-top: 6px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+    <div class="loading"></div>
+    <p>Cargando...</p>
+  </div>
+</body>
+</html>
