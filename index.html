@@ -12,31 +12,88 @@
         h1{
             font-family: verdana;
         }
-        a{
+        .links{
             text-decoration: none;
             color: red;
             font-size: large;
             font-weight: bold;
         }
-        a:hover{
+        .links:hover{
             text-decoration:underline;  
             color: blue;   
             font-size:larger;
         }
+
+        button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+        
+
+
     </style>
     <title>Mohamed</title>
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Portafoli/index2.html">Quin sóc</a></li>
+                <li><a href="Portafoli/contact.html">Contact Amb Mi</a></li>
+                <li><a href="index.html">Activitats</a></li>
+                
+            </ul>
+        </nav>
+    </header>
     
 <h1>Anar a activitats Html</h1>
 <br/>
-<a href="Activitats_HTML_CSS/Html/totsactivitatshtml.html">Activitats Html</a>
+<a class="links" href="Activitats_HTML_CSS/Html/totsactivitatshtml.html">Activitats Html</a>
 <br/>
 <br/>
 <h1>Anar a activitats Css</h1>
 <br/>
-<a href="Activitats_HTML_CSS/css/totsactivitatscss.html">Activitats Css</a>  
+<a class="links" href="Activitats_HTML_CSS/css/totsactivitatscss.html">Activitats Css</a>  
 
 
     
