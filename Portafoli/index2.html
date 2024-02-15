@@ -7,7 +7,8 @@
     <style>
        
 body {
-    background-color: #f4f4f4;
+    background-color: #d8d8d8;
+    text-align: center;
 }
 
 nav {
@@ -49,6 +50,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+    border:solid;
 }
 
 .languages {
@@ -58,11 +60,27 @@ img {
 .languages img {
     width: 70px;
     height: 70px;
-    margin: 10px;
 }
 
 p {
-    text-align: justify;
+    color: #004aa7;
+}
+h1{
+    color: red;
+}
+
+p{
+    font-family: verdana;
+    font-weight: bold;
+}
+div{
+    text-align: center;
+}
+
+#name{
+    color: #000000;
+    font-size : xx-large;
+    font-family : sans-serif;
 }
 
     </style>
@@ -81,10 +99,10 @@ p {
     <div class="content">
         <h1>Quin sóc</h1>
         <img src="fotoPersonal.jpg" width="210px" height="220px" alt="meva foto">
-        <h2>Mohamed</h2>
-        <p>Jo em dic Mohamed tinc 17 anys</p>
+        <h2 id="name">MOHAMED</h2>
+        <p>Jo em dic Mohamed tinc 17 anys, visc a Lllida i estudio a Caparrella . M'agrada aprendre diferents llenguatges de programació i m'agrada crear projectes amb elles.</p>
 
-        <h2>Llenguatges De Programació Que Practico</h2>
+        <h2 style="color:red">Llenguatges De Programació Que Practico</h2>
         <div class="languages">
             <img src="js.png" alt="JavaScript">
             <img src="py.jpg" alt="Python">
